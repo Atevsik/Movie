@@ -1,0 +1,97 @@
+body{
+    background-color:#2C2C54;
+}
+
+//NAV
+
+.nav{
+    padding: 2em 0 0 1em;
+}
+
+.nav-wrapper{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr 1fr;
+    
+}
+
+.nav-ul{
+    display: flex;
+    gap: 7em;
+        a{
+            text-decoration: none;
+            position: relative;
+            color: #FFF;
+            text-align: center;
+            font-family: Gilroy Medium;
+            font-size: 1.5rem;
+            font-weight: 500;
+        } 
+
+            
+}
+
+.nava::before{
+    content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #686DE0;
+    transition: width 0.5s;
+}
+
+.nava:hover::before{
+        width: 100%;
+
+}
+
+.login-nav{
+    display: flex;
+    gap: 3em;
+    :hover{
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+//END NAV
+
+.mainh{
+    color: #FFF;
+}
+
+.container-main{
+    padding: 3.8em 0 0 2.5em;
+    max-width: 70em;
+    h1{
+        color: #FFF;
+        font-family: Gilroy Bold;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-family: Gilroy Medium;
+        font-size: 1.2rem;
+        font-weight: 500;
+        max-width: 23em;
+        line-height: 1.4em;
+        margin-top: 3em;
+    }
+
+}
+
+.btn{
+    margin-top: 2em;
+    border-radius: 0.3125rem;
+    background: #686DE0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 27rem;
+    height: 5rem;
+    color: #2C2C54;
+    font-family: Gilroy Bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
